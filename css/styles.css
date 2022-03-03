@@ -1,8 +1,35 @@
-/* Fichier global Css */
-
-
 body {
-   /* font-family: 'Roboto', sans-serif; */
-   /* font-family: 'Shrikhand', cursive; */ 
-
+  font-family: "Roboto", sans-serif;
 }
+
+/* disposition du header */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 0.8em;
+}
+
+/* disposition du footer */
+footer {
+  background: gray;
+}
+footer h3 {
+  font-family: Shrikhand;
+}
+
+/* landing page index */
+#geo-localisation {
+  display: flex;
+  background-color: #eaeaea;
+  padding: 0.1em;
+  justify-content: center;
+}
+#geo-localisation h3 {
+  align-content: center;
+  font-size: 1.6em;
+}
+#geo-localisation i {
+  margin-right: 0.8em;
+}
+
+/*# sourceMappingURL=styles.css.map */
