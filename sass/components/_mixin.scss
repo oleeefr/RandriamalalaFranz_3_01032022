@@ -1,0 +1,30 @@
+@mixin btn-pink {
+    padding: 1.5rem 3rem;
+    text-align: center;
+    background: $color-backgroundPinkBtn;
+    width: min-content;
+    white-space: nowrap;
+    margin: 4rem auto;
+    border-radius: 30px;
+    box-shadow: 0.5em 0.625em 0.938em grey;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background: $color-backgroundPinkBtnLight;
+    }
+
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@mixin description__titre {
+    font-size: 1.7em;
+    color: black;
+    margin: 0.3em 0 0.3em;
+}
+
+

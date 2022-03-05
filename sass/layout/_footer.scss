@@ -1,0 +1,25 @@
+/* disposition du footer */
+footer {
+        background: $color-backgrdFooter;
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+        color: white;
+
+    h3 {
+        font-family: Shrikhand;
+        font-weight: lighter;
+        font-size: 1.8em;
+        margin: 0;
+        padding: 1em 0 0.5em 40px;
+    }
+
+    ul {
+        list-style: none;
+        padding-bottom: 1.4em;
+        font-size: 1.4em;
+    }
+
+    & li i {
+        margin-right: 1em;
+    }
+}
