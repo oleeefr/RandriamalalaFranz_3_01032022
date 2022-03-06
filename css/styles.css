@@ -124,7 +124,8 @@ main > div h2 {
 
 /* Listing des restaurants */
 #Listing-restaurants {
-  margin: 6.25em 1.2em;
+  margin-top: 6.25em;
+  margin-right: 1.2em;
   padding: 1em;
   background: #f4f4f4;
 }
