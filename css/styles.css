@@ -165,17 +165,21 @@ main > div h2 {
 #Listing-restaurants .dl__description dt {
   margin-left: 1.5em;
 }
-#Listing-restaurants .dl__description__titre--bold {
+#Listing-restaurants .dl__description .dl__description__titre--bold {
   font-size: 1.7em;
   color: black;
   margin: 0.3em 0 0.3em;
   font-weight: bold;
 }
-#Listing-restaurants .dl__description__titre--light {
+#Listing-restaurants .dl__description .dl__description__titre--light {
   font-size: 1.7em;
   color: black;
   margin: 0.3em 0 0.3em;
   font-weight: lighter;
+}
+#Listing-restaurants .dl__description i {
+  margin: 0.5em 0.5em 0 0;
+  color: #848484;
 }
 
 /*# sourceMappingURL=styles.css.map */

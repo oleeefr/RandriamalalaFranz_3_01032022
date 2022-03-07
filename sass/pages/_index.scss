@@ -115,21 +115,28 @@ main >div {
     .dl__description {
         display:flex;
         justify-content: space-between;
+
+        & dt {
+            margin-left: 1.5em;
+        }
+
+        .dl__description__titre--bold{
+            @include description__titre;
+            font-weight: bold;
+        }
+
+        .dl__description__titre--light {
+            @include description__titre;
+            font-weight: lighter;
+        }
+
+        i {
+            margin: 0.5em 0.5em 0 0;
+            color: $color-inconGreyDark;
+        }
+        
     }
 
-    .dl__description dt {
-        margin-left: 1.5em;
-    }
-
-    .dl__description__titre--bold{
-        @include description__titre;
-        font-weight: bold;
-    }
-
-    .dl__description__titre--light {
-        @include description__titre;
-        font-weight: lighter;
-    }
-
+   
 }
 
