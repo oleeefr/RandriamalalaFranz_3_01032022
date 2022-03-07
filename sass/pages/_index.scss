@@ -8,12 +8,12 @@
     justify-content: center;
     border-top: 5px solid $color-backgrdGreyDark;
 
-    & h3 {
+    h3 {
         align-content: center;
         font-size: 1.6em;
     }
 
-    & i {
+    i {
         margin-right: 0.8em;
     }
 }
@@ -23,17 +23,14 @@ main >div {
     background: $color-backgrdGreyLight;
     padding-top: 4em;
     padding-bottom: 0.1em;
-
-    & h2 {
-        margin:0em;
-    }
 }
 
 #Titre {
     text-align: center;
 
-    & h2 {
+    h2 {
         @extend %size-title;
+        margin:0em;
     }
 
     p {
@@ -46,7 +43,7 @@ main >div {
 #Fonctionnement {
     margin: 1.2em;
 
-    & h2 {
+    h2 {
         @extend %size-title;
     }
 
@@ -83,60 +80,58 @@ main >div {
        flex-wrap: wrap;
     }
 
-    & a {
-        width: 100%;
-        min-width: 2.3rem;
-        border-radius: 2rem;
-        margin : 1em 0 1em 0;
-        box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-        cursor: pointer;
-        position: relative;
-        transition: filter 0.2s ease-in-out, 
-        box-shadow 0.2s ease-in-out;
-        text-decoration: none;
-    }
+        & a {
+            width: 100%;
+            min-width: 2.3rem;
+            border-radius: 2rem;
+            margin : 1em 0 1em 0;
+            box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+            cursor: pointer;
+            position: relative;
+            transition: filter 0.2s ease-in-out, 
+            box-shadow 0.2s ease-in-out;
+            text-decoration: none;
 
-    & .Listing-restaurant__tagNouveau {
-        background : $color-tertiary;
-        color: $color-tertiaryDark;
-        padding: 0.5rem;
-        position: absolute; 
-        top: 1.8rem;
-        right: 0.9rem;;
-    }
+            & .Listing-restaurant__tagNouveau {
+                background : $color-tertiary;
+                color: $color-tertiaryDark;
+                padding: 0.5rem;
+                position: absolute; 
+                top: 1.8rem;
+                right: 0.9rem;;
+            }
 
-    img {
-        height: 12em;
-        object-fit: cover;
-        width: 100%;
-        border-radius: 2rem 2rem 0 0;
-    }
+            img {
+                height: 12em;
+                object-fit: cover;
+                width: 100%;
+                border-radius: 2rem 2rem 0 0;
+            }
 
-    .dl__description {
-        display:flex;
-        justify-content: space-between;
-
-        & dt {
-            margin-left: 1.5em;
-        }
-
-        .dl__description__titre--bold{
-            @include description__titre;
-            font-weight: bold;
-        }
-
-        .dl__description__titre--light {
-            @include description__titre;
-            font-weight: lighter;
-        }
-
-        i {
-            margin: 0.5em 0.5em 0 0;
-            color: $color-inconGreyDark;
-        }
+            .dl__description {
+                display:flex;
+                justify-content: space-between;
         
-    }
-
-   
+                & dt {
+                    margin-left: 1.5em;
+                }
+        
+                .dl__description__titre--bold {
+                    @include description__titre;
+                    font-weight: bold;
+                }
+        
+                .dl__description__titre--light {
+                    @include description__titre;
+                    font-weight: lighter;
+                }
+        
+                i {
+                    margin: 0.5em 0.5em 0 0;
+                    color: $color-inconGreyDark;
+                }
+                
+            }
+        }
 }
 

@@ -91,12 +91,12 @@ main > div {
   padding-top: 4em;
   padding-bottom: 0.1em;
 }
-main > div h2 {
-  margin: 0em;
-}
 
 #Titre {
   text-align: center;
+}
+#Titre h2 {
+  margin: 0em;
 }
 #Titre p {
   font-size: 1.6em;
@@ -144,7 +144,7 @@ main > div h2 {
   transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   text-decoration: none;
 }
-#Listing-restaurants .Listing-restaurant__tagNouveau {
+#Listing-restaurants a .Listing-restaurant__tagNouveau {
   background: #99E2D0;
   color: #278870;
   padding: 0.5rem;
@@ -152,32 +152,32 @@ main > div h2 {
   top: 1.8rem;
   right: 0.9rem;
 }
-#Listing-restaurants img {
+#Listing-restaurants a img {
   height: 12em;
   object-fit: cover;
   width: 100%;
   border-radius: 2rem 2rem 0 0;
 }
-#Listing-restaurants .dl__description {
+#Listing-restaurants a .dl__description {
   display: flex;
   justify-content: space-between;
 }
-#Listing-restaurants .dl__description dt {
+#Listing-restaurants a .dl__description dt {
   margin-left: 1.5em;
 }
-#Listing-restaurants .dl__description .dl__description__titre--bold {
+#Listing-restaurants a .dl__description .dl__description__titre--bold {
   font-size: 1.7em;
   color: black;
   margin: 0.3em 0 0.3em;
   font-weight: bold;
 }
-#Listing-restaurants .dl__description .dl__description__titre--light {
+#Listing-restaurants a .dl__description .dl__description__titre--light {
   font-size: 1.7em;
   color: black;
   margin: 0.3em 0 0.3em;
   font-weight: lighter;
 }
-#Listing-restaurants .dl__description i {
+#Listing-restaurants a .dl__description i {
   margin: 0.5em 0.5em 0 0;
   color: #848484;
 }
