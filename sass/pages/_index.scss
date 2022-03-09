@@ -3,10 +3,10 @@
 /*bar de localisation */
 #Geo-localisation {
     display: flex;
-    background-color: $color-backgroundGrey;
+    background-color:map-get($color-backgrdGrey, std);
     padding: 0.1em;
     justify-content: center;
-    border-top: 5px solid $color-backgrdGreyDark;
+    border-top: 5px solid map-get($color-backgrdGrey,dark);
 
     h3 {
         align-content: center;
@@ -20,7 +20,7 @@
 
 /* Bar de titre*/
 main >div {
-    background: $color-backgrdGreyLight;
+    background: map-get($color-backgrdGrey,light);
     padding-top: 4em;
     padding-bottom: 0.1em;
 }
@@ -48,7 +48,7 @@ main >div {
     }
 
     ol li {
-        background: $color-backgrdGreyLight;
+        background: map-get($color-backgrdGrey, light);
         padding: 0.2em 0.1em 0.2em 0.2em;
         margin : 0.4em 0 1.563em 0;
         box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
@@ -59,7 +59,7 @@ main >div {
     }
 
     & i {
-        color: $color-inconGreyDark;
+        color: map-get($color-backgrdGrey,iconDark);
         padding: 0.6em 1em 0.6em 0.2em;
     }
 }
@@ -69,7 +69,7 @@ main >div {
     margin-top: 6.25em;
     margin-right: 1.2em;
     padding: 1em;
-    background: $color-backgrdGreyLight;
+    background: map-get($color-backgrdGrey,light);
 
     h2 {
         @extend %size-title;
@@ -128,7 +128,7 @@ main >div {
         
                 i {
                     margin: 0.5em 0.5em 0 0;
-                    color: $color-inconGreyDark;
+                    color: map-get($color-backgrdGrey,iconDark);
                 }
                 
             }
