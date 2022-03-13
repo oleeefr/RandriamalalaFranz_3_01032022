@@ -47,7 +47,6 @@ header {
 /* disposition du footer général */
 footer {
   background: #3d3d3d;
-  margin-left: 1.2em;
   margin-right: 1.2em;
   color: white;
 }
@@ -169,13 +168,13 @@ header {
   margin-left: 1.5em;
 }
 #Listing-restaurants a .dl__description .dl__description__titre--bold {
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: black;
   margin: 0.3em 0 0.3em;
   font-weight: bold;
 }
 #Listing-restaurants a .dl__description .dl__description__titre--light {
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: black;
   margin: 0.3em 0 0.3em;
   font-weight: lighter;
@@ -213,15 +212,72 @@ header a i {
   justify-content: space-between;
   border-top-left-radius: 40px 40px;
   border-top-right-radius: 40px 40px;
-  transform: translateY(-80px);
-  margin-bottom: -80px;
+  transform: translateY(-2.5em);
+  margin-bottom: -3.6em;
   padding: 0.313em 1.563em;
+  padding-left: 0.8em;
   background-color: #f4f4f4;
   font-family: shrikhand, cursive;
-  font-size: large;
+  font-size: 1.3em;
 }
 #Nom-restaurant i {
   padding-top: 0.476em;
+}
+
+/* menu carte du Restaurant */
+.menu-restaurant {
+  background: #f4f4f4;
+}
+.menu-restaurant h2 {
+  margin-top: 0;
+  padding-top: 1em;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-left: 0.8em;
+}
+.menu-restaurant > .menu-restaurant__typePlat--souligne {
+  width: 40px;
+  height: 0.25em;
+  background-color: #99E2D0;
+  margin-top: 0;
+  margin-left: 1em;
+  padding: 0;
+}
+.menu-restaurant > div {
+  display: flex;
+  flex-direction: column;
+}
+.menu-restaurant > div article .filtre {
+  display: none;
+}
+.menu-restaurant > div article dl {
+  width: 96%;
+  border-radius: 2rem;
+  margin: 0.5em 0;
+  padding-left: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+.menu-restaurant > div article dl dt {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 0.8em;
+}
+.menu-restaurant > div article dl .descriptionPlat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+.menu-restaurant > div article dl .descriptionPlat p {
+  margin-top: 0.4em;
+}
+.menu-restaurant > div article dl .descriptionPlat .descriptionPlat__prix {
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-right: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

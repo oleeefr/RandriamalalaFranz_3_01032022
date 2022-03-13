@@ -29,15 +29,83 @@ header {
         justify-content: space-between;
         border-top-left-radius: 40px 40px;
         border-top-right-radius: 40px 40px;
-        transform: translateY(-80px);
-        margin-bottom: -80px;
+        transform: translateY(-2.5em);
+        margin-bottom: -3.6em;
         padding: 0.313em 1.563em;
+        padding-left: 0.8em;
         background-color: map-get($color-backgrdGrey, light);
         font-family: shrikhand, cursive;
-        font-size: large;
+        font-size: 1.3em;
     }
 
-    & i {
-        padding-top: 0.476em;
-    }
+        & i {
+            padding-top: 0.476em;
+        }
 }
+
+/* menu carte du Restaurant */
+
+.menu-restaurant {
+    background: map-get($color-backgrdGrey,light);
+
+    h2 {
+        margin-top: 0;
+        padding-top: 1em;
+        @include menu-restaurant__cateogoriePlat;
+    }
+
+    > .menu-restaurant__typePlat--souligne {
+
+        @include menu-restaurant__cateogoriePlat--soulignement($color-tertiary);
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        article {
+
+            .filtre {
+                display: none;
+            }
+
+            dl {
+                width: 96%;
+                //min-width: 3rem;
+                border-radius: 2rem;
+                margin : 0.5em 0;
+                padding-left: 20px;
+                box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+                transition: filter 0.2s ease-in-out, 
+                    box-shadow 0.2s ease-in-out;
+                cursor: pointer;
+
+                dt {
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    padding-top: 0.8em;
+                }
+
+                .descriptionPlat {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.2em;
+
+                    p {
+                        margin-top: 0.4em;
+                    }
+
+                    .descriptionPlat__prix {
+                        font-weight: bolder;
+                        font-size: 1.2em;
+                        margin-right: 1em;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    
+
+}
+

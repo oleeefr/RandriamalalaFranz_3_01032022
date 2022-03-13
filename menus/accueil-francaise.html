@@ -4,168 +4,179 @@
     <meta charset="utf-8" />
     <title>OhMyFood</title>
     <meta name="description" content="Catalogue du menu Gastronomique" />
-	<meta name="keywords" content="Restaurant, Gastronimie, menu, food" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-	integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
-	crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="keywords" content="Restaurant, Gastronimie, menu, food" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/ed0721a499.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+        <a href="../index.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
         <img src="../images/logo/ohmyfood.png" alt="Logo" srcset="../images/logo/ohmyfood@2x.svg" />
     </header>
     <main>
-        <div>
+        <section id="Nom-restaurant">
             <img src="../images/restaurants/toa-heftiba-unsplash.jpg" alt="Restaurant A la Française"/>
-            <h2>A la française<i class="fas fa-2x fa-heart"></i></h2>
-        </div>
-        <section>
-            <h2>entrées</h2>
-            <article>
-                <dl>
-                    <dt>Tartare de poulpe acidulé</dt>
-                    <dd>
-                        <div>
-                            <p>Au zests d'orange</p>
-                            <p>35€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
-            <article>
-                <dl>
-                    <dt>Tartare de poulpe acidulé</dt>
-                    <dd>
-                        <div>
-                            <p>Au zests d'orange</p>
-                            <p>35€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
-            <article>
-                <dl>
-                    <dt>Tartare de poulpe acidulé</dt>
-                    <dd>
-                        <div>
-                            <p>Au zests d'orange</p>
-                            <p>35€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
+            <div><h2>A la française</h2><i class="fa-regular fa-heart fa-2x"></i></div>
         </section>
-        <section>
-            <h2>plats</h2>
-            <article>
-                <dl>
-                    <dt>Coquilles Saint-Jacques</dt>
-                    <dd>
-                        <div>
-                            <p>Accompagnées d'une purée de panais</p>
-                            <p>40€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
-            <article>
-                <dl>
-                    <dt>Magret de canard</dt>
-                    <dd>
-                        <div>
-                            <p>Et parmentier de pommes de terres</p>
-                            <p>35€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
-            <article>
-                <dl>
-                    <dt>Pigeonneau d'ille-et-Vilaine</dt>
-                    <dd>
-                        <div>
-                            <p>Sur son lit de gnocchis aux légumes</p>
-                            <p>44€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
-        </section>
-        <section>
-            <h2>Desserts</h2>
-            <article>
-                <dl>
-                    <dt>Pétales de violettes glacés</dt>
-                    <dd>
-                        <div>
-                            <p>Et purée de noisettes</p>
-                            <p>18€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
-            <article>
-                <dl>
-                    <dt>Fondant au chocolat</dt>
-                    <dd>
-                        <div>
-                            <p>Revisité</p>
-                            <p>22€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
-            <article>
-                <dl>
-                    <dt>Millefeuille croustillant</dt>
-                    <dd>
-                        <div>
-                            <p>Myrtilles et pâtes d'amande</p>
-                            <p>23€</p>
-                        </div>
-                    </dd>
-                </dl>
-                <div>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </article>
+        <section class="menu-restaurant">
+            <h2 class="menu-restaurant__typePlat">entrées</h2>
+            <div class="menu-restaurant__typePlat--souligne"></div>
             <div>
-                <a href="#">Commander</a>
+                <article>
+                    <h2 class="filtre">Plat de Tartare de poulpe acidulé</h2>
+                    <dl>
+                        <dt>Tartare de poulpe acidulé</dt>
+                        <dd class="descriptionPlat">
+                            <p>Tartare de poulpe acidulé</p>
+                            <p class="descriptionPlat__prix">25€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+                <article>
+                    <h2 class="filtre">Plat de Foie gras de canard mi-cuit</h2>
+                    <dl>
+                        <dt>Foie gras de canard mi-cuit</dt>
+                        <dd class="descriptionPlat">
+                            <p>Et ses copeaux de truffe noire</p>
+                            <p class="descriptionPlat__prix">35€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+                <article>
+                    <h2 class="filtre">Plat de Velouté de légumes d'antan</h2>
+                    <dl>
+                        <dt>Velouté de légumes d'antan</dt>
+                        <dd class="descriptionPlat">
+                            <p>Carotte, panais, topinambour</p>
+                            <p class="descriptionPlat__prix">35€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+                <article>
+                    <h2 class="filtre">Plat de Soupe à l'oignon</h2>
+                    <dl>
+                        <dt>Soupe à l'oignon</dt>
+                        <dd class="descriptionPlat">
+                            <p>Revisitée</p>
+                            <p class="descriptionPlat__prix">20€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="menu-restaurant">
+            <h2 class="menu-restaurant__typePlat">plats</h2>
+            <div class="menu-restaurant__typePlat--souligne"></div>
+            <div>
+                <article>
+                    <h2 class="filtre">Plat de Coquilles Saint-Jacques</h2>
+                    <dl>
+                        <dt>Coquilles Saint-Jacques</dt>
+                        <dd class="descriptionPlat">
+                            <p>Coquilles Saint-Jacquess</p>
+                            <p class="descriptionPlat__prix">40€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+                <article>
+                    <h2 class="filtre">Plat de Magret de canard</h2>
+                    <dl>
+                        <dt>Magret de canard</dt>
+                        <dd class="descriptionPlat">
+                            <p>Et parmentier de pommes de terre</p>
+                            <p class="descriptionPlat__prix">35€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+                <article>
+                    <h2 class="filtre">Plat Pigeonneau d’Ille-et-Vilaine</h2>
+                    <dl>
+                        <dt>Pigeonneau d’Ille-et-Vilaine</dt>
+                        <dd class="descriptionPlat">
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                            <p class="descriptionPlat__prix">44€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="menu-restaurant">
+            <h2 class="menu-restaurant__typePlat">Desserts</h2>
+            <div class="menu-restaurant__typePlat--souligne"></div>
+            <div>
+                <article>
+                    <h2 class="filtre">Plat de Pétales de violettes glacés</h2>
+                    <dl>
+                        <dt>Pétales de violettes glacés</dt>
+                        <dd class="descriptionPlat">
+                            <p>Et purée de noisettes</p>
+                            <p class="descriptionPlat__prix">18€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+                <article>
+                    <h2 class="filtre">Plat de Fondant au chocolat</h2>
+                    <dl>
+                        <dt>Fondant au chocolat</dt>
+                        <dd class="descriptionPlat">
+                            <p>Revisité</p>
+                            <p class="descriptionPlat__prix">22€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+                <article>
+                    <h2 class="filtre">Plat de Millefeuille croustillant</h2>
+                    <dl>
+                        <dt>Millefeuille croustillant</dt>
+                        <dd class="descriptionPlat">
+                            <p>Myrtilles et pâte d’amande</p>
+                            <p class="descriptionPlat__prix">23€</p>
+                        </dd>
+                    </dl>
+                    <div>
+                        <i class="fas fa-check-circle filtre"></i>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <div class="btn-pink"><a href="#">Commander</a></div>
             </div>
         </section>
     </main>
     <footer>
-        <img src="../images/logo/ohmyfood.png" alt="Logo" srcset="../images/logo/ohmyfood@2x.svg" />
+        <h3>Ohmyfood</h3>
         <ul>
             <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
             <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>

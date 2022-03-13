@@ -20,12 +20,9 @@ $color-backgrdPinkBtn : (
     light :  linear-gradient(162deg,$color-secondary 50%,$color-primary 100%)
 );
 
+$text_plat_de:"plat de ";
 
 // Breakpoints des modes d'affichge MOBILE FIRST, TABLETTE, ORDINATEUR 
-$max-mobile: 698px;
-$max-deskop: 1450px;
-$max-tablet: 972px;
-
 $resolutionDisplay : (
     max-mobile: 698px,
     max-deskop: 1450px,

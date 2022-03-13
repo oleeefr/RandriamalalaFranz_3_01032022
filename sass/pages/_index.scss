@@ -64,10 +64,10 @@ header {
         font-weight: bold;
     }
 
-    & i {
-        color: map-get($color-backgrdGrey,iconDark);
-        padding: 0.6em 1em 0.6em 0.2em;
-    }
+        & i {
+            color: map-get($color-backgrdGrey,iconDark);
+            padding: 0.6em 1em 0.6em 0.2em;
+        }
 }
 
 /* Listing des restaurants */
@@ -95,7 +95,7 @@ header {
             cursor: pointer;
             position: relative;
             transition: filter 0.2s ease-in-out, 
-            box-shadow 0.2s ease-in-out;
+                box-shadow 0.2s ease-in-out;
             text-decoration: none;
 
             & .Listing-restaurant__tagNouveau {
