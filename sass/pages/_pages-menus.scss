@@ -1,0 +1,43 @@
+/* page des menus restaurants */
+
+/* disposition du header */
+/* bouton retour sur les pages de menus */
+header {
+    a {
+        text-decoration: none;
+        color: map-get($color-backgrdGrey,iconDark);
+        & i {
+            position: absolute;
+            top: 0.3em;
+            left: 0.05em;
+        }
+    }
+}
+
+/* Bar entete Restaurant */
+#Nom-restaurant {
+    display: block;
+    img {
+        height: 18.125em;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top-left-radius: 40px 40px;
+        border-top-right-radius: 40px 40px;
+        transform: translateY(-80px);
+        margin-bottom: -80px;
+        padding: 0.313em 1.563em;
+        background-color: map-get($color-backgrdGrey, light);
+        font-family: shrikhand, cursive;
+        font-size: large;
+    }
+
+    & i {
+        padding-top: 0.476em;
+    }
+}

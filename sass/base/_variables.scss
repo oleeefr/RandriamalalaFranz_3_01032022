@@ -6,11 +6,6 @@ $color-tertiaryDark : darken($color-tertiary, 40%);
 
 // Couleur arrière plan Gris avec les nuances
 $color-backgroundGrey: #eaeaea;
-$color-backgrdGreyDark : darken($color-backgroundGrey,10%);
-$color-backgrdGreyLight : lighten($color-backgroundGrey,4%);
-$color-inconGreyDark : darken($color-backgroundGrey,40%);
-$color-backgrdFooter : darken($color-backgroundGrey, 68%);
-
 $color-backgrdGrey : (
     std : #eaeaea,
     dark : darken($color-backgroundGrey,10%),
@@ -20,9 +15,6 @@ $color-backgrdGrey : (
 );
 
 // couleur arriere plan du bouton général de validation
-$color-backgroundPinkBtn :linear-gradient(162deg,$color-secondary 0%,$color-primary 100%);
-$color-backgroundPinkBtnLight : linear-gradient(162deg,$color-secondary 50%,$color-primary 100%);
-
 $color-backgrdPinkBtn : (
     std: linear-gradient(162deg,$color-secondary 0%,$color-primary 100%),
     light :  linear-gradient(162deg,$color-secondary 50%,$color-primary 100%)

@@ -1,7 +1,7 @@
 @mixin btn-pink {
     padding: 1.5rem 3rem;
     text-align: center;
-    background: $color-backgroundPinkBtn;
+    background:map-get($color-backgrdPinkBtn, std);
     width: min-content;
     white-space: nowrap;
     margin: 4rem auto;
@@ -12,7 +12,7 @@
     transition: 0.2s ease-in-out;
 
     &:hover {
-        background: $color-backgroundPinkBtnLight;
+        background:map-get($color-backgrdPinkBtn, light);
     }
 
     & a {

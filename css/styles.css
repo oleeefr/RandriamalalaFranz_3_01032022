@@ -7,12 +7,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* disposition du header */
+/* disposition du header général */
 header {
   background: white;
   top: 0;
   display: flex;
-  justify-content: center;
   padding: 0.8em;
   z-index: 2;
   position: sticky;
@@ -41,11 +40,11 @@ header {
 }
 
 /* taille générale des titres */
-#Listing-restaurants h2, #Fonctionnement h2, #Titre h2 {
+#Listing-restaurants h2, #Fonctionnement h2, #Titre .Titre__text h2 {
   font-size: 2em;
 }
 
-/* disposition du footer */
+/* disposition du footer général */
 footer {
   background: #3d3d3d;
   margin-left: 1.2em;
@@ -69,6 +68,11 @@ footer ul li i {
 }
 
 /* landing page index */
+/* disposition de l'entête logo */
+header {
+  justify-content: center;
+}
+
 /*bar de localisation */
 #Geo-localisation {
   display: flex;
@@ -86,19 +90,18 @@ footer ul li i {
 }
 
 /* Bar de titre*/
-main > div {
+#Titre {
   background: #f4f4f4;
   padding-top: 4em;
   padding-bottom: 0.1em;
 }
-
-#Titre {
+#Titre .Titre__text {
   text-align: center;
 }
-#Titre h2 {
+#Titre .Titre__text h2 {
   margin: 0em;
 }
-#Titre p {
+#Titre .Titre__text p {
   font-size: 1.6em;
   font-weight: lighter;
 }
@@ -180,6 +183,45 @@ main > div {
 #Listing-restaurants a .dl__description i {
   margin: 0.5em 0.5em 0 0;
   color: #848484;
+}
+
+/* page des menus restaurants */
+/* disposition du header */
+/* bouton retour sur les pages de menus */
+header a {
+  text-decoration: none;
+  color: #848484;
+}
+header a i {
+  position: absolute;
+  top: 0.3em;
+  left: 0.05em;
+}
+
+/* Bar entete Restaurant */
+#Nom-restaurant {
+  display: block;
+}
+#Nom-restaurant img {
+  height: 18.125em;
+  width: 100%;
+  object-fit: cover;
+}
+#Nom-restaurant > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+  transform: translateY(-80px);
+  margin-bottom: -80px;
+  padding: 0.313em 1.563em;
+  background-color: #f4f4f4;
+  font-family: shrikhand, cursive;
+  font-size: large;
+}
+#Nom-restaurant i {
+  padding-top: 0.476em;
 }
 
 /*# sourceMappingURL=styles.css.map */

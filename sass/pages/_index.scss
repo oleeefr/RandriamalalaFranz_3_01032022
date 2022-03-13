@@ -1,5 +1,10 @@
 /* landing page index */
 
+/* disposition de l'entête logo */
+header {
+    justify-content: center;
+}
+
 /*bar de localisation */
 #Geo-localisation {
     display: flex;
@@ -19,24 +24,25 @@
 }
 
 /* Bar de titre*/
-main >div {
+#Titre {
     background: map-get($color-backgrdGrey,light);
     padding-top: 4em;
     padding-bottom: 0.1em;
-}
 
-#Titre {
-    text-align: center;
-
-    h2 {
-        @extend %size-title;
-        margin:0em;
+    .Titre__text {
+        text-align: center;
+    
+        h2 {
+            @extend %size-title;
+            margin:0em;
+        }
+    
+        p {
+            font-size: 1.6em;
+            font-weight: lighter;
+        }
     }
 
-    p {
-        font-size: 1.6em;
-        font-weight: lighter;
-    }
 }
 
 /* bar de fonctionnement */
