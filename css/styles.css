@@ -27,6 +27,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .container .menu-restaurant {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 992px) {
   .container .listing-restaurants a, .container .listing-restaurants img {
@@ -35,6 +38,18 @@
   .container .listing-restaurants > div {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .container main .menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #f4f4f4;
+  }
+  .container .menu-restaurant {
+    width: 480px;
+  }
+  .container .menu-restaurant article {
+    width: 464px;
   }
 }
 

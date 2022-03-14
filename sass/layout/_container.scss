@@ -33,6 +33,11 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
+        .menu-restaurant {
+            width: 100%;
+        }
+
     }
 
     // résolution minimum desktop
@@ -47,6 +52,20 @@
             justify-content: space-around;
         }
 
+        main .menus {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: map-get($color-backgrdGrey,light);
+        }
+
+        .menu-restaurant {
+            width:480px;
+
+            article {
+                width:464px;
+            }
+        }
     }
 }
 
