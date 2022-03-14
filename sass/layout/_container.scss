@@ -1,0 +1,52 @@
+/* container plus les modes d'affichages écrans*/
+.container {
+
+    main {
+        margin: 0 auto;
+        max-width: map-get($resolutionDisplay,max-desktop);
+    }
+
+    dd {
+        margin-inline-start:0em;
+    }
+
+    // résolution maximum mobile
+    @include max-mobile {
+
+        .listing-restaurants a, .listing-restaurants img {
+            width: map-get($size-restaurantWidth, mobile);
+        }
+
+        .listing-restaurants > div {
+            flex-direction: column;
+        } 
+    }
+
+    // résolution minimum-maximum tablette 
+    @include max-tablet {
+
+        .listing-restaurants a, .listing-restaurants img {
+           width: map-get($size-restaurantWidth, tablette);
+        }
+
+        .listing-restaurants > div {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    // résolution minimum desktop
+    @include mode-customizeMin (map-get($resolutionDisplay, max-tablet)) {
+
+        .listing-restaurants a, .listing-restaurants img {
+            width: map-get($size-restaurantWidth, desktop);
+         }
+
+         .listing-restaurants > div {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+    }
+}
+

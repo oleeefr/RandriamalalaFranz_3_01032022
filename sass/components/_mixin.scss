@@ -1,3 +1,4 @@
+// Bouton genéral de validation
 @mixin btn-pink {
     padding: 1.5rem 3rem;
     text-align: center;
@@ -21,12 +22,14 @@
     }
 }
 
+// Format du nom restaurant dans la liste des restaurants
 @mixin description__titre {
     font-size: 1.5em;
     color: black;
     margin: 0.3em 0 0.3em;
 }
 
+// Format du titre du type de plat dans les menus
 @mixin menu-restaurant__cateogoriePlat {
     font-weight:normal;
     font-size: 1.3em;
@@ -35,6 +38,7 @@
     margin-left: 0.8em;
 }
 
+// Soulignement du titre du type de plat dans les menus
 @mixin menu-restaurant__cateogoriePlat--soulignement ($couleur) {
     width: 40px;
     height: 0.25em;
@@ -42,6 +46,47 @@
     margin-top:0;
     margin-left: 1em;
     padding: 0;
-    //margin-left: 5vw;
 }
+
+// mode d'affichage max mobile
+@mixin max-mobile {
+
+    @media screen and (max-width: map-get($resolutionDisplay, max-mobile)) {
+        @content;
+    }
+}
+
+// mode d'affichage max tablet
+@mixin max-tablet {
+
+    @media screen and (min-width: map-get($resolutionDisplay, max-mobile)) and (max-width: map-get($resolutionDisplay, max-tablet)) {
+        @content;
+    }
+}
+
+// mode d'affichage max écran
+@mixin max-desktop {
+
+    @media screen and (min-width: map-get($resolutionDisplay, max-tablet)) and (max-width: map-get($resolutionDisplay, max-desktop)) {
+        @content;
+    }
+
+}
+
+// mode d'affichage Minimum personalisé
+@mixin mode-customizeMin ($resolution-display) {
+
+    @media screen and (min-width: $resolution-display) {
+        @content;
+    }
+}
+
+// mode d'affichage Maximum personalisé
+@mixin mode-customizeMax ($resolution-display) {
+
+    @media screen and (max-width: $resolution-display) {
+        @content;
+    }
+}
+
 

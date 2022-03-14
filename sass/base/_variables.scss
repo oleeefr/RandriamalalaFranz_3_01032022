@@ -24,7 +24,10 @@ $text_plat_de:"plat de ";
 
 // Breakpoints des modes d'affichge MOBILE FIRST, TABLETTE, ORDINATEUR 
 $resolutionDisplay : (
-    max-mobile: 698px,
-    max-deskop: 1450px,
-    max-tablet: 972px,
+    max-mobile: 768px,
+    max-tablet: 992px,
+    max-desktop: 1450px
 );
+
+// Redimension des articles restaurants dans le listing
+$size-restaurantWidth : (mobile: 100%, tablette:342px, desktop:490px)

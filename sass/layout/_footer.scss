@@ -1,6 +1,6 @@
 /* disposition du footer général */
 footer {
-        // background: $color-backgrdFooter;
+        display: block;
         background: map-get($color-backgrdGrey,backgroundFooter);
         //margin-left: 1.2em;
         margin-right: 1.2em;
@@ -24,5 +24,17 @@ footer {
         }
     }
 
+    // redimensionement en mode tablette
+    @include max-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    //redimensionnement en mode écran
+    @include mode-customizeMin (map-get($resolutionDisplay, max-desktop)) {
+        display:flex;
+        justify-content: center;
+    }
     
 }

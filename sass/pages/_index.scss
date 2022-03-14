@@ -71,7 +71,7 @@ header {
 }
 
 /* Listing des restaurants */
-#Listing-restaurants {
+.listing-restaurants {
     margin-top: 6.25em;
     margin-right: 1.2em;
     padding: 1em;
@@ -83,11 +83,9 @@ header {
 
     > div {
        display: flex;
-       flex-wrap: wrap;
     }
 
         & a {
-            width: 100%;
             min-width: 2.3rem;
             border-radius: 2rem;
             margin : 1em 0 1em 0;
@@ -98,7 +96,7 @@ header {
                 box-shadow 0.2s ease-in-out;
             text-decoration: none;
 
-            & .Listing-restaurant__tagNouveau {
+            & .listing-restaurant__tagNouveau {
                 background : $color-tertiary;
                 color: $color-tertiaryDark;
                 padding: 0.5rem;
@@ -110,7 +108,6 @@ header {
             img {
                 height: 12em;
                 object-fit: cover;
-                width: 100%;
                 border-radius: 2rem 2rem 0 0;
             }
 
