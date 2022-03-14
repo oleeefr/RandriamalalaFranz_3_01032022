@@ -169,6 +169,9 @@ header {
 #Fonctionnement {
   margin: 1.2em;
 }
+#Fonctionnement ol {
+  list-style: none;
+}
 #Fonctionnement ol li {
   background: #f4f4f4;
   padding: 0.2em 0.1em 0.2em 0.2em;
@@ -179,9 +182,18 @@ header {
   font-size: 1.7em;
   font-weight: bold;
 }
-#Fonctionnement i {
+#Fonctionnement ol li i {
   color: #848484;
   padding: 0.6em 1em 0.6em 0.2em;
+}
+#Fonctionnement ol li .picto {
+  position: relative;
+  right: 1em;
+  border-radius: 50%;
+  background: #9356DC;
+  color: white;
+  font-size: 1em;
+  padding: 0 8px;
 }
 
 /* Listing des restaurants */

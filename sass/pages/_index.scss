@@ -53,21 +53,33 @@ header {
         @extend %size-title;
     }
 
-    ol li {
-        background: map-get($color-backgrdGrey, light);
-        padding: 0.2em 0.1em 0.2em 0.2em;
-        margin : 0.4em 0 1.563em 0;
-        box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
-        border-radius: 1rem;
-        align-items: center;
-        font-size: 1.7em;
-        font-weight: bold;
+    ol {
+       list-style: none;
+
+        & li {
+            background: map-get($color-backgrdGrey, light);
+            padding: 0.2em 0.1em 0.2em 0.2em;
+            margin : 0.4em 0 1.563em 0;
+            box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
+            border-radius: 1rem;
+            align-items: center;
+            font-size: 1.7em;
+            font-weight: bold;
+
+            i {
+                color: map-get($color-backgrdGrey,iconDark);
+                padding: 0.6em 1em 0.6em 0.2em;
+            }
+
+            .picto {
+                @include picto-purple;
+            }
+        }
+
+
     }
 
-        & i {
-            color: map-get($color-backgrdGrey,iconDark);
-            padding: 0.6em 1em 0.6em 0.2em;
-        }
+       
 }
 
 /* Listing des restaurants */
