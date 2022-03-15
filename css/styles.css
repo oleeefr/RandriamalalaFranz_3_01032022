@@ -12,6 +12,9 @@
   margin-inline-start: 0em;
 }
 @media screen and (max-width: 768px) {
+  .container #Fonctionnement ol {
+    display: block;
+  }
   .container .listing-restaurants a, .container .listing-restaurants img {
     width: 100%;
   }
@@ -20,6 +23,15 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .container #Fonctionnement ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .container #Fonctionnement ol li {
+    width: 330px;
+    margin-right: 2em;
+  }
   .container .listing-restaurants a, .container .listing-restaurants img {
     width: 342px;
   }
@@ -32,6 +44,15 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .container #Fonctionnement ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .container #Fonctionnement ol li {
+    width: 330px;
+    margin-right: 2em;
+  }
   .container .listing-restaurants a, .container .listing-restaurants img {
     width: 490px;
   }
@@ -42,9 +63,29 @@
   .container main .menus {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     background: #f4f4f4;
   }
+  .container .menu-restaurant {
+    width: 480px;
+  }
+  .container .menu-restaurant article {
+    width: 464px;
+  }
+}
+@media screen and (min-width: 1150px) and (max-width: 1450px) {
+  .container .menu-restaurant {
+    width: 480px;
+    padding-right: 0px;
+    margin-top: 1em;
+    margin-right: 4%;
+    margin-left: 1%;
+  }
+  .container .menu-restaurant article {
+    width: 464px;
+  }
+}
+@media screen and (min-width: 1450px) {
   .container .menu-restaurant {
     width: 480px;
   }
@@ -179,7 +220,7 @@ header {
   box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
   border-radius: 1rem;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 #Fonctionnement ol li i {

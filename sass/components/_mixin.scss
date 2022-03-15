@@ -89,6 +89,14 @@
     }
 }
 
+// mode d'affichage Minimum-maximum personalisé
+@mixin mode-customizeMinMax ($resolution-displaymin, $resolution-displaymax) {
+
+    @media screen and (min-width: $resolution-displaymin) and (max-width: $resolution-displaymax) {
+        @content;
+    }
+
+}
 
 //picto de l'ordre de fonctionnement
 @mixin picto-purple {
