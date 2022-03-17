@@ -95,7 +95,6 @@
     @media screen and (min-width: $resolution-displaymin) and (max-width: $resolution-displaymax) {
         @content;
     }
-
 }
 
 //picto de l'ordre de fonctionnement
@@ -107,6 +106,20 @@
     color: white;
     font-size: 1em;
     padding:0 8px;
+}
+
+//bouton Picto Coeur dégradé
+@mixin btn-pictoHeart {
+    position: absolute;
+    transform: translateY(-63px) scaleY(0.4);
+    cursor: pointer;
+    opacity:0;
+
+    .icon-gradient:before {
+        background: map-get($color-backgrdPinkBtn, std);
+        -webkit-background-clip: text; // TODO
+        color: transparent;
+    }
 }
 
 

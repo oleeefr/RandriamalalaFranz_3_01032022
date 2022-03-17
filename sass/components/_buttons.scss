@@ -4,3 +4,8 @@
    @include btn-pink;
 }
 
+/* Aspect du bouton du Coeur dégradé */
+.btn-heart {
+   @include btn-pictoHeart;
+}
+

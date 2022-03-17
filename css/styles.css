@@ -21,6 +21,11 @@
   .container .listing-restaurants > div {
     flex-direction: column;
   }
+  .container .btn-heart:active {
+    opacity: 1;
+    transform: translateY(-71px) scale(1.05);
+    transition: transform 1500ms;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .container #Fonctionnement ol {
@@ -41,6 +46,11 @@
   }
   .container .menu-restaurant {
     width: 100%;
+  }
+  .container .btn-heart:active {
+    opacity: 1;
+    transform: translateY(-71px) scale(1.05);
+    transition: transform 1500ms;
   }
 }
 @media screen and (min-width: 992px) {
@@ -72,6 +82,11 @@
   .container .menu-restaurant article {
     width: 464px;
   }
+  .container .btn-heart:hover {
+    opacity: 1;
+    transform: translateY(-71px) scale(1.05);
+    transition: transform 1500ms;
+  }
 }
 @media screen and (min-width: 1150px) and (max-width: 1450px) {
   .container .menu-restaurant {
@@ -84,6 +99,11 @@
   .container .menu-restaurant article {
     width: 464px;
   }
+  .container .menu-restaurant .btn-heart:hover {
+    opacity: 1;
+    transform: translateY(-71px) scale(1.05);
+    transition: transform 1500ms;
+  }
 }
 @media screen and (min-width: 1450px) {
   .container .menu-restaurant {
@@ -91,6 +111,11 @@
   }
   .container .menu-restaurant article {
     width: 464px;
+  }
+  .container .menu-restaurant .btn-heart:hover {
+    opacity: 1;
+    transform: translateY(-71px) scale(1.05);
+    transition: transform 1500ms;
   }
 }
 
@@ -124,6 +149,19 @@ header {
 .btn-pink a {
   color: white;
   text-decoration: none;
+}
+
+/* Aspect du bouton du Coeur dégradé */
+.btn-heart {
+  position: absolute;
+  transform: translateY(-63px) scaleY(0.4);
+  cursor: pointer;
+  opacity: 0;
+}
+.btn-heart .icon-gradient:before {
+  background: linear-gradient(162deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* taille générale des titres */

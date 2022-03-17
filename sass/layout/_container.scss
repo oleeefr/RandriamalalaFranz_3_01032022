@@ -15,7 +15,6 @@
 
         #Fonctionnement ol {
             display: block;
-
         }
 
         .listing-restaurants a, .listing-restaurants img {
@@ -24,7 +23,16 @@
 
         .listing-restaurants > div {
             flex-direction: column;
-        } 
+        }
+        
+        .btn-heart {
+            
+            &:active {
+                opacity:1;
+                transform: translateY(-71px) scale(1.05);
+                transition: transform 1500ms;
+            }
+        }
     }
 
     // résolution minimum-maximum tablette 
@@ -55,6 +63,15 @@
 
         .menu-restaurant {
             width: 100%;
+        }
+
+        .btn-heart {
+            
+            &:active {
+                opacity:1;
+                transform: translateY(-71px) scale(1.05);
+                transition: transform 1500ms;
+            }
         }
 
     }
@@ -99,6 +116,15 @@
                 width:464px;
             }
         }
+
+        .btn-heart {
+            
+            &:hover {
+                opacity:1;
+                transform: translateY(-71px) scale(1.05);
+                transition: transform 1500ms;
+            }
+        }
     }
 
     // resolution de transition entre tablette et mobile
@@ -114,6 +140,15 @@
             article {
                 width:464px;
             }
+
+            .btn-heart {
+            
+                &:hover {
+                    opacity:1;
+                    transform: translateY(-71px) scale(1.05);
+                    transition: transform 1500ms;
+                }
+            }
         }
 
     }
@@ -125,6 +160,15 @@
         
             article {
                 width:464px;
+            }
+
+            .btn-heart {
+            
+                &:hover {
+                    opacity:1;
+                    transform: translateY(-71px) scale(1.05);
+                    transition: transform 1500ms;
+                }
             }
         }
 
