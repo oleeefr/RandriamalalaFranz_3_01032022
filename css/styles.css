@@ -6,7 +6,7 @@
 /* container plus les modes d'affichages écrans*/
 .container main {
   margin: 0 auto;
-  max-width: 1450px;
+  max-width: 1550px;
 }
 .container dd {
   margin-inline-start: 0em;
@@ -21,10 +21,21 @@
   .container .listing-restaurants > div {
     flex-direction: column;
   }
+  .container .btn-heart {
+    opacity: 0;
+    transition: opacity 880ms;
+  }
   .container .btn-heart:active {
     opacity: 1;
-    transform: translateY(-71px) scale(1.05);
+    transform: translateY(-100%) scale(1.05);
     transition: transform 1500ms;
+  }
+  .container .menu-restaurant .plat:active + .check {
+    margin-right: 0rem;
+  }
+  .container .menu-restaurant .plat:active + .check > i {
+    transform: rotate(-2turn);
+    transition: transform 1500ms ease-in-out;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -49,8 +60,15 @@
   }
   .container .btn-heart:active {
     opacity: 1;
-    transform: translateY(-71px) scale(1.05);
+    transform: translateY(-100%) scale(1.05);
     transition: transform 1500ms;
+  }
+  .container .menu-restaurant .plat:active + .check {
+    margin-right: 0rem;
+  }
+  .container .menu-restaurant .plat:active + .check > i {
+    transform: rotate(-2turn);
+    transition: transform 1500ms ease-in-out;
   }
 }
 @media screen and (min-width: 992px) {
@@ -77,6 +95,7 @@
     background: #f4f4f4;
   }
   .container .menu-restaurant {
+    margin-right: 15px;
     width: 480px;
   }
   .container .menu-restaurant article {
@@ -84,11 +103,22 @@
   }
   .container .btn-heart:hover {
     opacity: 1;
-    transform: translateY(-71px) scale(1.05);
+    transform: translateY(-100%) scale(1.05);
     transition: transform 1500ms;
   }
+  .container .menu-restaurant .plat:hover + .check {
+    margin-right: 0rem;
+  }
+  .container .menu-restaurant .plat:hover + .check > i {
+    transform: rotate(-2turn);
+    transition: transform 1500ms ease-in-out;
+  }
 }
-@media screen and (min-width: 1150px) and (max-width: 1450px) {
+@media screen and (min-width: 1150px) and (max-width: 1550px) {
+  .container .listing-restaurants > div {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   .container .menu-restaurant {
     width: 480px;
     padding-right: 0px;
@@ -101,12 +131,19 @@
   }
   .container .menu-restaurant .btn-heart:hover {
     opacity: 1;
-    transform: translateY(-71px) scale(1.05);
+    transform: translateY(-100%) scale(1.05);
     transition: transform 1500ms;
   }
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1550px) {
+  .container #Fonctionnement ol {
+    justify-content: space-around;
+  }
+  .container .listing-restaurants > div a {
+    margin-right: 15px;
+  }
   .container .menu-restaurant {
+    margin-right: 20px;
     width: 480px;
   }
   .container .menu-restaurant article {
@@ -114,7 +151,7 @@
   }
   .container .menu-restaurant .btn-heart:hover {
     opacity: 1;
-    transform: translateY(-71px) scale(1.05);
+    transform: translateY(-100%) scale(1.05);
     transition: transform 1500ms;
   }
 }
@@ -154,7 +191,7 @@ header {
 /* Aspect du bouton du Coeur dégradé */
 .btn-heart {
   position: absolute;
-  transform: translateY(-63px) scaleY(0.4);
+  transform: translateY(-89%) scaleY(0.4);
   cursor: pointer;
   opacity: 0;
 }
@@ -191,14 +228,14 @@ footer ul {
 footer ul li i {
   margin-right: 1em;
 }
-@media screen and (min-width: 992px) and (max-width: 1450px) {
+@media screen and (min-width: 992px) and (max-width: 1550px) {
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1550px) {
   footer {
     display: flex;
     justify-content: center;
@@ -396,36 +433,69 @@ header a i {
 .menu-restaurant > div {
   display: flex;
   flex-direction: column;
+  margin-left: 5px;
+}
+.menu-restaurant > div article {
+  display: flex;
+  border-radius: 2rem;
+  margin: 0.5em 0;
+  padding-left: 20px;
+  box-shadow: 4px 9px 13px -3px rgba(0, 0, 0, 0.55);
+  transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  width: 93%;
 }
 .menu-restaurant > div article .filtre {
   display: none;
 }
-.menu-restaurant > div article dl {
-  width: 96%;
-  border-radius: 2rem;
-  margin: 0.5em 0;
-  padding-left: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  cursor: pointer;
+.menu-restaurant > div article .plat {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu-restaurant > div article dl dt {
+.menu-restaurant > div article .plat dl {
+  display: block;
+  width: 96%;
+}
+.menu-restaurant > div article .plat dl dt {
   font-weight: bold;
   font-size: 1.5em;
   padding-top: 0.8em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu-restaurant > div article dl .descriptionPlat {
+.menu-restaurant > div article .plat dl .descriptionPlat {
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
 }
-.menu-restaurant > div article dl .descriptionPlat p {
+.menu-restaurant > div article .plat dl .descriptionPlat .descriptionPlat__information {
   margin-top: 0.4em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu-restaurant > div article dl .descriptionPlat .descriptionPlat__prix {
+.menu-restaurant > div article .plat dl .descriptionPlat .descriptionPlat__prix {
   font-weight: bolder;
   font-size: 1.2em;
   margin-right: 1em;
+}
+.menu-restaurant > div article .check {
+  background: #99E2D0;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding-top: 52px;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: white;
+  margin-right: -6rem;
+  transition: all 1s;
+}
+.menu-restaurant > div article .check > i {
+  transform: rotate(0turn);
 }
 
 /*# sourceMappingURL=styles.css.map */

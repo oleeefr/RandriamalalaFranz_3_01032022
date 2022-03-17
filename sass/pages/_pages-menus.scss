@@ -62,46 +62,80 @@ header {
     > div {
         display: flex;
         flex-direction: column;
-        article {
+        margin-left: 5px;
 
+        article {
+            display: flex;
+            border-radius: 2rem;
+            margin : 0.5em 0;
+            padding-left: 20px;
+            //box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+            //box-shadow: 10px 5px 5px gray;
+            box-shadow: 4px 9px 13px -3px rgba(0,0,0,0.55);
+            transition: filter 0.2s ease-in-out, 
+            box-shadow 0.2s ease-in-out;
+            cursor: pointer;
+            overflow:hidden;
+            width: 93%;
+            
             .filtre {
                 display: none;
             }
 
-            dl {
-                width: 96%;
-                //min-width: 3rem;
-                border-radius: 2rem;
-                margin : 0.5em 0;
-                padding-left: 20px;
-                box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-                transition: filter 0.2s ease-in-out, 
-                    box-shadow 0.2s ease-in-out;
-                cursor: pointer;
+            .plat {
+                width: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
 
-                dt {
-                    font-weight: bold;
-                    font-size: 1.5em;
-                    padding-top: 0.8em;
-                }
+                dl {
+                    display: block;
+                    width: 96%;
 
-                .descriptionPlat {
-                    display: flex;
-                    justify-content: space-between;
-                    font-size: 1.2em;
-
-                    p {
-                        margin-top: 0.4em;
+                    dt {
+                        font-weight: bold;
+                        font-size: 1.5em;
+                        padding-top: 0.8em;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
-
-                    .descriptionPlat__prix {
-                        font-weight: bolder;
+    
+                    .descriptionPlat {
+                        display: flex;
+                        justify-content: space-between;
                         font-size: 1.2em;
-                        margin-right: 1em;
+
+                        .descriptionPlat__information {
+                            margin-top: 0.4em;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+    
+                        .descriptionPlat__prix {
+                            font-weight: bolder;
+                            font-size: 1.2em;
+                            margin-right: 1em;
+                        }
                     }
                 }
             }
-            
+
+            .check {
+                background: $color-tertiary;
+                border-top-right-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+                padding-top: 52px;
+                padding-left: 2%;
+                padding-right: 2%;
+                color: white;
+                margin-right: -6rem;
+                transition: all 1s;
+               > i {
+                   transform: rotate(0turn);
+               }
+            }
         }
     }
 }

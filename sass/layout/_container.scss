@@ -24,13 +24,28 @@
         .listing-restaurants > div {
             flex-direction: column;
         }
-        
+
         .btn-heart {
-            
+            opacity: 0;
+            transition: opacity 880ms;
+
             &:active {
                 opacity:1;
-                transform: translateY(-71px) scale(1.05);
+                transform: translateY(-100%) scale(1.05);
                 transition: transform 1500ms;
+            }
+        }
+
+        .menu-restaurant {
+            .plat {
+
+                &:active + .check {
+                    margin-right: 0rem;
+                    > i {
+                        transform: rotate(-2turn);
+                        transition: transform 1500ms ease-in-out;
+                    }
+                } 
             }
         }
     }
@@ -69,8 +84,21 @@
             
             &:active {
                 opacity:1;
-                transform: translateY(-71px) scale(1.05);
+                transform: translateY(-100%) scale(1.05);
                 transition: transform 1500ms;
+            }
+        }
+
+        .menu-restaurant {
+            .plat {
+
+                &:active + .check {
+                    margin-right: 0rem;
+                    > i {
+                        transform: rotate(-2turn);
+                        transition: transform 1500ms ease-in-out;
+                    }
+                } 
             }
         }
 
@@ -102,6 +130,7 @@
             justify-content: space-around;
         }
 
+
         main .menus {
             display:flex;
             flex-wrap: wrap;
@@ -110,6 +139,7 @@
         }
 
         .menu-restaurant {
+            margin-right: 15px;
             width:480px;
         
             article {
@@ -121,14 +151,32 @@
             
             &:hover {
                 opacity:1;
-                transform: translateY(-71px) scale(1.05);
+                transform: translateY(-100%) scale(1.05);
                 transition: transform 1500ms;
+            }
+        }
+
+        .menu-restaurant {
+            .plat {
+
+                &:hover + .check {
+                    margin-right: 0rem;
+                    > i {
+                        transform: rotate(-2turn);
+                        transition: transform 1500ms ease-in-out;
+                    }
+                } 
             }
         }
     }
 
     // resolution de transition entre tablette et mobile
     @include mode-customizeMinMax ("1150px", map-get($resolutionDisplay, max-desktop)) {
+
+        .listing-restaurants > div {
+              flex-wrap: wrap;
+              justify-content: space-around;
+          }
 
         .menu-restaurant {
             width:480px;
@@ -145,7 +193,7 @@
             
                 &:hover {
                     opacity:1;
-                    transform: translateY(-71px) scale(1.05);
+                    transform: translateY(-100%) scale(1.05);
                     transition: transform 1500ms;
                 }
             }
@@ -154,8 +202,24 @@
     }
 
     @include mode-customizeMin (map-get($resolutionDisplay, max-desktop)) {
+        
+        #Fonctionnement {
+        
+            ol { 
+                justify-content: space-around;
+            }
+        }
+    
+        .listing-restaurants > div {
+           // justify-content: flex-start;
+            
+            a {
+                margin-right: 15px;
+            }
+        }
 
         .menu-restaurant {
+            margin-right: 20px;
             width:480px;
         
             article {
@@ -166,7 +230,7 @@
             
                 &:hover {
                     opacity:1;
-                    transform: translateY(-71px) scale(1.05);
+                    transform: translateY(-100%) scale(1.05);
                     transition: transform 1500ms;
                 }
             }
