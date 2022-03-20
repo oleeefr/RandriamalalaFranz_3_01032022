@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.5) translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+  }
+}
 .container {
   font-family: "Roboto", sans-serif;
 }
@@ -198,6 +208,7 @@ header {
 }
 .btn-heart .icon-gradient:before {
   background: linear-gradient(162deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -434,12 +445,12 @@ header a i {
   margin-left: 1em;
   padding: 0;
 }
-.menu-restaurant > div {
+.menu-restaurant .menu-restaurant--fadein {
   display: flex;
   flex-direction: column;
   margin-left: 5px;
 }
-.menu-restaurant > div article {
+.menu-restaurant .menu-restaurant--fadein article {
   display: flex;
   border-radius: 2rem;
   margin: 0.5em 0;
@@ -449,21 +460,36 @@ header a i {
   cursor: pointer;
   overflow: hidden;
   width: 93%;
+  animation-name: fade-in;
+  animation-duration: 1500ms;
+  animation-fill-mode: both;
 }
-.menu-restaurant > div article .filtre {
+.menu-restaurant .menu-restaurant--fadein article:nth-child(1) {
+  animation-delay: 500ms;
+}
+.menu-restaurant .menu-restaurant--fadein article:nth-child(2) {
+  animation-delay: 1000ms;
+}
+.menu-restaurant .menu-restaurant--fadein article:nth-child(3) {
+  animation-delay: 1500ms;
+}
+.menu-restaurant .menu-restaurant--fadein article:nth-child(4) {
+  animation-delay: 2000ms;
+}
+.menu-restaurant .menu-restaurant--fadein article .filtre {
   display: none;
 }
-.menu-restaurant > div article .plat {
+.menu-restaurant .menu-restaurant--fadein article .plat {
   width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-restaurant > div article .plat dl {
+.menu-restaurant .menu-restaurant--fadein article .plat dl {
   display: block;
   width: 96%;
 }
-.menu-restaurant > div article .plat dl dt {
+.menu-restaurant .menu-restaurant--fadein article .plat dl dt {
   font-weight: bold;
   font-size: 1.5em;
   padding-top: 0.8em;
@@ -471,23 +497,23 @@ header a i {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-restaurant > div article .plat dl .descriptionPlat {
+.menu-restaurant .menu-restaurant--fadein article .plat dl .descriptionPlat {
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
 }
-.menu-restaurant > div article .plat dl .descriptionPlat .descriptionPlat__information {
+.menu-restaurant .menu-restaurant--fadein article .plat dl .descriptionPlat .descriptionPlat__information {
   margin-top: 0.4em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-restaurant > div article .plat dl .descriptionPlat .descriptionPlat__prix {
+.menu-restaurant .menu-restaurant--fadein article .plat dl .descriptionPlat .descriptionPlat__prix {
   font-weight: bolder;
   font-size: 1.2em;
   margin-right: 1em;
 }
-.menu-restaurant > div article .check {
+.menu-restaurant .menu-restaurant--fadein article .check {
   background: #99E2D0;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -498,7 +524,7 @@ header a i {
   margin-right: -6rem;
   transition: all 1s;
 }
-.menu-restaurant > div article .check > i {
+.menu-restaurant .menu-restaurant--fadein article .check > i {
   transform: rotate(0turn);
 }
 

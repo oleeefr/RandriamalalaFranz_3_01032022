@@ -118,7 +118,8 @@
 
     .icon-gradient:before {
         background: map-get($color-backgrdPinkBtn, std);
-        -webkit-background-clip: text; // TODO
+        background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
     }
 }
