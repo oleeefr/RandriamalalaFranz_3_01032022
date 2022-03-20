@@ -3,6 +3,7 @@ $color-primary : #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-tertiaryDark : darken($color-tertiary, 40%);
+$color-secondaryLight :lighten($color-secondary,10%);
 
 // Couleur arrière plan Gris avec les nuances
 $color-backgroundGrey: #eaeaea;
@@ -19,8 +20,6 @@ $color-backgrdPinkBtn : (
     std: linear-gradient(162deg,$color-secondary 0%,$color-primary 100%),
     light :  linear-gradient(162deg,$color-secondary 50%,$color-primary 100%)
 );
-
-$text_plat_de:"plat de ";
 
 // Breakpoints des modes d'affichge MOBILE FIRST, TABLETTE, ORDINATEUR 
 $resolutionDisplay : (
