@@ -445,12 +445,12 @@ header a i {
   margin-left: 1em;
   padding: 0;
 }
-.menu-restaurant .menu-restaurant--fadein {
+.menu-restaurant > div {
   display: flex;
   flex-direction: column;
   margin-left: 5px;
 }
-.menu-restaurant .menu-restaurant--fadein article {
+.menu-restaurant > div article {
   display: flex;
   border-radius: 2rem;
   margin: 0.5em 0;
@@ -464,32 +464,32 @@ header a i {
   animation-duration: 1500ms;
   animation-fill-mode: both;
 }
-.menu-restaurant .menu-restaurant--fadein article:nth-child(1) {
+.menu-restaurant > div article:nth-child(1) {
   animation-delay: 500ms;
 }
-.menu-restaurant .menu-restaurant--fadein article:nth-child(2) {
+.menu-restaurant > div article:nth-child(2) {
   animation-delay: 1000ms;
 }
-.menu-restaurant .menu-restaurant--fadein article:nth-child(3) {
+.menu-restaurant > div article:nth-child(3) {
   animation-delay: 1500ms;
 }
-.menu-restaurant .menu-restaurant--fadein article:nth-child(4) {
+.menu-restaurant > div article:nth-child(4) {
   animation-delay: 2000ms;
 }
-.menu-restaurant .menu-restaurant--fadein article .filtre {
+.menu-restaurant > div article .filtre {
   display: none;
 }
-.menu-restaurant .menu-restaurant--fadein article .plat {
+.menu-restaurant > div article .plat {
   width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-restaurant .menu-restaurant--fadein article .plat dl {
+.menu-restaurant > div article .plat dl {
   display: block;
   width: 96%;
 }
-.menu-restaurant .menu-restaurant--fadein article .plat dl dt {
+.menu-restaurant > div article .plat dl dt {
   font-weight: bold;
   font-size: 1.5em;
   padding-top: 0.8em;
@@ -497,23 +497,23 @@ header a i {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-restaurant .menu-restaurant--fadein article .plat dl .descriptionPlat {
+.menu-restaurant > div article .plat dl .descriptionPlat {
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
 }
-.menu-restaurant .menu-restaurant--fadein article .plat dl .descriptionPlat .descriptionPlat__information {
+.menu-restaurant > div article .plat dl .descriptionPlat .descriptionPlat__information {
   margin-top: 0.4em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-restaurant .menu-restaurant--fadein article .plat dl .descriptionPlat .descriptionPlat__prix {
+.menu-restaurant > div article .plat dl .descriptionPlat .descriptionPlat__prix {
   font-weight: bolder;
   font-size: 1.2em;
   margin-right: 1em;
 }
-.menu-restaurant .menu-restaurant--fadein article .check {
+.menu-restaurant > div article .check {
   background: #99E2D0;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -524,7 +524,7 @@ header a i {
   margin-right: -6rem;
   transition: all 1s;
 }
-.menu-restaurant .menu-restaurant--fadein article .check > i {
+.menu-restaurant > div article .check > i {
   transform: rotate(0turn);
 }
 

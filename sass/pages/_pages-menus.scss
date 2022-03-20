@@ -59,7 +59,7 @@ header {
         @include menu-restaurant__cateogoriePlat--soulignement($color-tertiary);
     }
 
-    .menu-restaurant--fadein {
+    > div {
         display: flex;
         flex-direction: column;
         margin-left: 5px;
