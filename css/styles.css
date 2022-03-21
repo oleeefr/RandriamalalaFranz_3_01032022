@@ -52,7 +52,6 @@
     flex-direction: column;
   }
   .container .btn-heart {
-    opacity: 0;
     transition: opacity 880ms;
   }
   .container .btn-heart:active {
