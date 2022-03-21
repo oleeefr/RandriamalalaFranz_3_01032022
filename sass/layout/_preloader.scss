@@ -1,0 +1,20 @@
+.preloader {
+    position: fixed;
+    background: #FFFFFF;
+    height:100vh;
+    inset:0;
+    z-index: 3;
+    opacity: 0.9;
+    animation-name: preloader;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 2500ms;
+    display: grid;
+    place-items: center;
+}
+
+@keyframes preloader {
+    to {
+        visibility: hidden;
+    }
+}

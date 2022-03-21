@@ -13,6 +13,26 @@
   font-family: "Roboto", sans-serif;
 }
 
+.preloader {
+  position: fixed;
+  background: #FFFFFF;
+  height: 100vh;
+  inset: 0;
+  z-index: 3;
+  opacity: 0.9;
+  animation-name: preloader;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 2500ms;
+  display: grid;
+  place-items: center;
+}
+
+@keyframes preloader {
+  to {
+    visibility: hidden;
+  }
+}
 /* container plus les modes d'affichages écrans*/
 .container main {
   margin: 0 auto;
@@ -176,6 +196,20 @@ header {
   position: sticky;
 }
 
+.spinner {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: conic-gradient(#9356DC 10%, #FF79DA);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 14px), #000 0);
+  animation: spinner-preloading 1s infinite linear;
+}
+
+@keyframes spinner-preloading {
+  to {
+    transform: rotate(1turn);
+  }
+}
 /* Aspect du bouton général de Validation */
 .btn-pink {
   padding: 1.5rem 3rem;

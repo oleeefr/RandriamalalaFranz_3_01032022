@@ -1,0 +1,17 @@
+.spinner {
+   width: 88px;
+   height: 88px;
+   border-radius: 50%;
+   background: conic-gradient($color-primary 10%,$color-secondary);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 14px),#000 0);
+
+   animation: spinner-preloading 1s infinite linear;
+}
+
+@keyframes spinner-preloading {
+   to {
+      transform: rotate(1turn);
+   }
+}
+
+ 
