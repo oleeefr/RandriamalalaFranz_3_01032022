@@ -64,7 +64,7 @@
     margin-right: 0rem;
   }
   .container .menu-restaurant .plat:active + .check > i {
-    transform: rotate(-2turn);
+    transform: rotate(1turn);
     transition: transform 1500ms ease-in-out;
   }
 }
@@ -97,7 +97,7 @@
     margin-right: 0rem;
   }
   .container .menu-restaurant .plat:active + .check > i {
-    transform: rotate(-2turn);
+    transform: rotate(1turn);
     transition: transform 1500ms ease-in-out;
   }
 }
@@ -140,7 +140,7 @@
     margin-right: 0rem;
   }
   .container .menu-restaurant .plat:hover + .check > i {
-    transform: rotate(-2turn);
+    transform: rotate(1turn);
     transition: transform 1500ms ease-in-out;
   }
 }

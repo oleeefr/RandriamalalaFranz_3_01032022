@@ -42,7 +42,7 @@
                 &:active + .check {
                     margin-right: 0rem;
                     > i {
-                        transform: rotate(-2turn);
+                        transform: rotate(1turn);
                         transition: transform 1500ms ease-in-out;
                     }
                 }
@@ -95,7 +95,7 @@
                 &:active + .check {
                     margin-right: 0rem;
                     > i {
-                        transform: rotate(-2turn);
+                        transform: rotate(1turn);
                         transition: transform 1500ms ease-in-out;
                     }
                 } 
@@ -162,7 +162,7 @@
                 &:hover + .check {
                     margin-right: 0rem;
                     > i {
-                        transform: rotate(-2turn);
+                        transform: rotate(1turn);
                         transition: transform 1500ms ease-in-out;
                     }
                 } 
