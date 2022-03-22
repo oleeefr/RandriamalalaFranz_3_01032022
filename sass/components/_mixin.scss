@@ -65,7 +65,7 @@
     }
 }
 
-// mode d'affichage max écran
+// mode d'affichage max desktop
 @mixin max-desktop {
 
     @media screen and (min-width: map-get($resolutionDisplay, max-tablet)) and (max-width: map-get($resolutionDisplay, max-desktop)) {

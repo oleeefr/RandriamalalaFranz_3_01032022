@@ -26,7 +26,6 @@
         }
 
         .btn-heart {
-            opacity: 0;
             transition: opacity 880ms;
 
             &:active {
@@ -81,7 +80,7 @@
         }
 
         .btn-heart {
-            
+
             &:active {
                 opacity:1;
                 transform: translateY(-100%) scale(1.05);
@@ -104,7 +103,7 @@
 
     }
 
-    // résolution minimum desktop
+    // resolution de transition entre tablette et mobile
     @include mode-customizeMin (map-get($resolutionDisplay, max-tablet)) {
 
         #Fonctionnement {
@@ -170,7 +169,7 @@
         }
     }
 
-    // resolution de transition entre tablette et mobile
+    // résolution minimum desktop
     @include mode-customizeMinMax ("1150px", map-get($resolutionDisplay, max-desktop)) {
 
         .listing-restaurants > div {
