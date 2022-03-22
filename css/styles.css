@@ -1,39 +1,9 @@
 @charset "UTF-8";
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: scaleY(0.5) translateY(-40%);
-  }
-  100% {
-    opacity: 1;
-    transform: scaleY(1) translateY(0);
-  }
-}
 .container {
   font-family: "Roboto", sans-serif;
 }
 
-.preloader {
-  position: fixed;
-  background: #FFFFFF;
-  height: 100vh;
-  inset: 0;
-  z-index: 3;
-  opacity: 0.9;
-  animation-name: preloader;
-  animation-duration: 3s;
-  animation-fill-mode: both;
-  animation-delay: 2500ms;
-  display: grid;
-  place-items: center;
-}
-
-@keyframes preloader {
-  to {
-    visibility: hidden;
-  }
-}
-/* container plus les modes d'affichages écrans*/
+/* container plus les modes d'affichages écrans sur la page d'accueil */
 .container main {
   margin: 0 auto;
   max-width: 1550px;
@@ -204,20 +174,6 @@ header i {
   }
 }
 
-.spinner {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  background: conic-gradient(#9356DC 10%, #FF79DA);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 14px), #000 0);
-  animation: spinner-preloading 1s infinite linear;
-}
-
-@keyframes spinner-preloading {
-  to {
-    transform: rotate(1turn);
-  }
-}
 /* Aspect du bouton général de Validation */
 .btn-pink {
   padding: 1.5rem 3rem;
@@ -260,6 +216,42 @@ header i {
   font-size: 2em;
 }
 
+/* page de péloading */
+.preloader {
+  position: fixed;
+  background: #FFFFFF;
+  height: 100vh;
+  inset: 0;
+  z-index: 3;
+  opacity: 0.9;
+  animation-name: preloader;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 2500ms;
+  display: grid;
+  place-items: center;
+}
+
+@keyframes preloader {
+  to {
+    visibility: hidden;
+  }
+}
+/* Spinner de préloading */
+.spinner {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: conic-gradient(#9356DC 10%, #FF79DA);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 14px), #000 0);
+  animation: spinner-preloading 1s infinite linear;
+}
+
+@keyframes spinner-preloading {
+  to {
+    transform: rotate(1turn);
+  }
+}
 /* disposition du footer général */
 footer {
   display: block;
@@ -498,6 +490,7 @@ header a i {
   margin-left: 5px;
 }
 .menu-restaurant > div article {
+  /* animation d'apparation des plats dans les menus */
   display: flex;
   border-radius: 2rem;
   margin: 0.5em 0;
@@ -573,6 +566,18 @@ header a i {
 }
 .menu-restaurant > div article .check > i {
   transform: rotate(0turn);
+}
+
+/* animation de fondu fade-in sur les pages de menus */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.5) translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

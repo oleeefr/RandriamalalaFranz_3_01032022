@@ -1,4 +1,4 @@
-/* container plus les modes d'affichages écrans*/
+/* container plus les modes d'affichages écrans sur la page d'accueil */
 .container {
 
     main {
@@ -10,7 +10,6 @@
         margin-inline-start:0em;
     }
 
-    // résolution maximum mobile
     @include max-mobile {
 
         #Fonctionnement ol {

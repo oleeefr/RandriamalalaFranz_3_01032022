@@ -4,27 +4,27 @@
 
 @import"components/_mixin";
 
-@import"components/_animations";
-
 @import"base/_typo";
-
-@import"layout/_preloader";
 
 @import"layout/_container.scss";
 
 @import"layout/_header";
 
-@import"components/_spinner";
-
 @import"components/_buttons";
 
 @import"components/_extension";
+
+@import"layout/_preloader";
+
+@import"components/_spinner";
 
 @import"layout/_footer";
 
 @import"pages/_index";
 
 @import"pages/_pages-menus";
+
+@import"components/_animations";
 
 
 

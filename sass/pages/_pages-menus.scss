@@ -65,6 +65,8 @@ header {
         margin-left: 5px;
 
         article {
+
+            /* animation d'apparation des plats dans les menus */
             @for $i from 1 through 4 {
                 &:nth-child(#{$i}) {
                     animation-delay: 500ms*$i;
