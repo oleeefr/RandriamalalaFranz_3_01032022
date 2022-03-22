@@ -6,4 +6,15 @@ header {
     padding: 0.8em;
     z-index: 2;
     position: sticky;
+
+    i {
+        padding-left: 0.5em;
+    }
+
+    // butée d'affichage en mode desktop
+    @include mode-customizeMin (map-get($resolutionDisplay, max-desktop)) {
+        margin: 0 auto;
+        max-width: map-get($resolutionDisplay, max-desktop);
+        }
 }
+

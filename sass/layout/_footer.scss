@@ -18,9 +18,16 @@ footer {
         list-style: none;
         padding-bottom: 1.4em;
         font-size: 1.4em;
+        font-family: 'Roboto', sans-serif;
         
-        & li i {
-            margin-right: 1em;
+        & li {
+            $marginTopBottom : 0.2em;
+            padding-top: $marginTopBottom;
+            padding-bottom: $marginTopBottom;
+
+            i {
+                margin-right: 1em;
+            }
         }
     }
 

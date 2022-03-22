@@ -123,7 +123,7 @@ header {
                 border-radius: 2rem 2rem 0 0;
             }
 
-            .dl__description {
+            .description {
                 display:flex;
                 justify-content: space-between;
         
@@ -131,12 +131,12 @@ header {
                     margin-left: 1.5em;
                 }
         
-                .dl__description__titre--bold {
+                .description__titre--bold {
                     @include description__titre;
                     font-weight: bold;
                 }
         
-                .dl__description__titre--light {
+                .description__titre--light {
                     @include description__titre;
                     font-weight: lighter;
                 }

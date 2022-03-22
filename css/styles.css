@@ -195,6 +195,15 @@ header {
   z-index: 2;
   position: sticky;
 }
+header i {
+  padding-left: 0.5em;
+}
+@media screen and (min-width: 1550px) {
+  header {
+    margin: 0 auto;
+    max-width: 1550px;
+  }
+}
 
 .spinner {
   width: 88px;
@@ -270,6 +279,11 @@ footer ul {
   list-style: none;
   padding-bottom: 1.4em;
   font-size: 1.4em;
+  font-family: "Roboto", sans-serif;
+}
+footer ul li {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
 footer ul li i {
   margin-right: 1em;
@@ -354,7 +368,7 @@ header {
 #Fonctionnement ol li .picto {
   position: relative;
   right: 1em;
-  border-radius: 50%;
+  border-radius: 44%;
   background: #9356DC;
   color: white;
   font-size: 1em;
@@ -394,26 +408,26 @@ header {
   object-fit: cover;
   border-radius: 2rem 2rem 0 0;
 }
-.listing-restaurants a .dl__description {
+.listing-restaurants a .description {
   display: flex;
   justify-content: space-between;
 }
-.listing-restaurants a .dl__description dt {
+.listing-restaurants a .description dt {
   margin-left: 1.5em;
 }
-.listing-restaurants a .dl__description .dl__description__titre--bold {
+.listing-restaurants a .description .description__titre--bold {
   font-size: 1.5em;
   color: black;
   margin: 0.3em 0 0.3em;
   font-weight: bold;
 }
-.listing-restaurants a .dl__description .dl__description__titre--light {
+.listing-restaurants a .description .description__titre--light {
   font-size: 1.5em;
   color: black;
   margin: 0.3em 0 0.3em;
   font-weight: lighter;
 }
-.listing-restaurants a .dl__description i {
+.listing-restaurants a .description i {
   margin: 0.5em 0.5em 0 0;
   color: #848484;
 }
