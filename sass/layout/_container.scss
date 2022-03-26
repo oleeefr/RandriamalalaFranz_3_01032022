@@ -12,8 +12,12 @@
 
     @include max-mobile {
 
-        #Fonctionnement ol {
-            display: block;
+        #Fonctionnement  {
+
+            ol {
+                display: block;
+                padding-inline-start: 20px;
+            }
         }
 
         .listing-restaurants a, .listing-restaurants img {
@@ -51,20 +55,20 @@
     // résolution minimum-maximum tablette 
     @include max-tablet {
 
-        #Fonctionnement {
-        
-            ol { 
-                display:flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                padding-inline-start: 35px;
+        #Fonctionnement  {
 
-                & li {
-                    width: 330px;
-                    margin-right: 2em;
-                }
-            }
-        }
+           ol { 
+                  display:flex;
+                  flex-wrap: wrap;
+                  justify-content: flex-start;
+                  padding-inline-start: 20px;
+  
+                  & li {
+                      width: 290px;
+                      margin-right: 2em;
+                  }
+              }
+          }
         
         .listing-restaurants a, .listing-restaurants img {
            width: map-get($size-restaurantWidth, tablette);

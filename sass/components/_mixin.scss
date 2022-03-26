@@ -59,8 +59,10 @@
 
 // mode d'affichage max tablet
 @mixin max-tablet {
+    $resolutionMin: map-get($resolutionDisplay, max-mobile) + 1;
+    $resolutionMax: map-get($resolutionDisplay, max-tablet) - 1;
 
-    @media screen and (min-width: map-get($resolutionDisplay, max-mobile)) and (max-width: map-get($resolutionDisplay, max-tablet)) {
+    @media screen and (min-width: $resolutionMin ) and (max-width: $resolutionMax) {
         @content;
     }
 }

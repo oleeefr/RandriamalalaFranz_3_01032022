@@ -11,9 +11,10 @@
 .container dd {
   margin-inline-start: 0em;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 768px) {
   .container #Fonctionnement ol {
     display: block;
+    padding-inline-start: 20px;
   }
   .container .listing-restaurants a, .container .listing-restaurants img {
     width: 100%;
@@ -37,15 +38,15 @@
     transition: transform 1500ms ease-in-out;
   }
 }
-@media screen and (min-width: 860px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .container #Fonctionnement ol {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-inline-start: 35px;
+    padding-inline-start: 20px;
   }
   .container #Fonctionnement ol li {
-    width: 330px;
+    width: 290px;
     margin-right: 2em;
   }
   .container .listing-restaurants a, .container .listing-restaurants img {
